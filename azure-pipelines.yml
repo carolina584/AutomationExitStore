@@ -25,3 +25,7 @@ steps:
         shell: bash
         run: |
           ./gradlew build
+task: Gradle@3
+  displayName: 'gradlew build'
+  inputs:
+    workingDirectory: '$(Build.SourcesDirectory)/TestPath'
