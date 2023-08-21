@@ -1,0 +1,2 @@
+# AutomationExitStore
+Pipeline CI, CD
