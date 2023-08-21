@@ -21,3 +21,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
+    name: Gradle Build
+        shell: bash
+        run: |
+          ./gradlew build
