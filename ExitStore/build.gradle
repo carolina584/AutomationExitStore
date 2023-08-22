@@ -15,7 +15,18 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'net.serenity-bdd.aggregator'                             
+apply plugin: 'net.serenity-bdd.aggregator'          
+plugins {
+    id("org.sonarqube") version "4.3.0.3225"
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "myProjectKey")
+    property("sonar.organization", "myOrganization")
+    property("sonar.host.url", "myHostUrl")
+  }
+}                   
 
 dependencies {
     testImplementation 'net.serenity-bdd:serenity-core:2.0.90'                  
@@ -31,6 +42,7 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-screenplay:2.0.90'
     implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.90'  
     implementation 'org.apache.commons:commons-lang3:3.8.1'   
+
     }
 gradle.startParameter.continueOnFailure = true 
 
