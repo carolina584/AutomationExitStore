@@ -11,5 +11,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
         glue="co.com.choucair.exitstore.stepdefinitions",
         snippets=SnippetType.CAMELCASE)
 public class ExitStoreRunner {
+
 	
 }
