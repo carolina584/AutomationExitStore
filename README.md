@@ -1,5 +1,5 @@
 # AutomationExitStore
-Pipeline CI, CD
+
 
 Automatizacion-Exit Store
 
